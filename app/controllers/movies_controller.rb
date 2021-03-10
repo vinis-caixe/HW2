@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    id = params[:id]
+    id = params[:sort_by]
     @movie = Movie.find(id)
   end
 
